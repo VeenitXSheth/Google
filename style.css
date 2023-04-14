@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #202124;
+    color: white;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+#home {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#home nav {
+    height: 60px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.about {
+    margin-right: 15px;
+    color: #bdc1c6;
+    font-size: 14px;
+}
+
+.about:hover {
+    text-decoration: underline;
+}
+
+.store {
+    color: #bdc1c6;
+    margin-right: 75%;
+    font-size: 14px;
+}
+
+.store:hover {
+    text-decoration: underline;
+}
+
+.gmail {
+    margin-right: 15px;
+}
+
+.gmail:hover {
+    text-decoration: underline;
+}
+
+.images {
+    margin-right: 30px;
+}
+
+.images:hover {
+    text-decoration: underline;
+}
+
+#home nav ul {
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #bdc1c6;
+    display: flex;
+    align-items: center;
+}
+
+#home nav ul span {
+    color: white;
+    margin-right: 30px;
+    position: absolute;
+    z-index: 4;
+    margin-left: 90.75%;
+}
+
+#home nav ul span:hover {
+    background: #303134;
+    padding: 10px 10px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 90.225%;
+}
+
+.profile-picture {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 4;
+    margin-left: 93.25%;
+}
+
+.profile-picture:hover {
+    background: #303134;
+    padding: 6.75px 6.75px 6.75px;
+    cursor: pointer;
+    margin-left: 92.875%;
+}
+
+#home .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home .content .logo {
+    margin: auto;
+    display: block;
+    width: 273px;
+    height: 102px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+#home .content .search {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home .content .search input {
+    display: absolute;
+    background: transparent;
+    border: 1px solid #bdc1c6;
+    padding: 15px 100px 15px;
+    border-radius: 69px;
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 12px;
+    caret-color: white;
+    color: white;
+}
+
+#home .content .search input:hover {
+    background: #303134;
+    border: 1px solid #303134;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#home .content .search input:focus {
+    border-color: #303134;
+    outline: 0 none;
+    background: #303134;
+    border: 1px solid #303134;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#home .content .search #search-icon {
+    position: absolute;
+    z-index: 10;
+    margin-left: 31.5%;
+    margin-top: 0.25%;
+    color: #bdc1c6;
+}
+
+#home .content .search #camera-icon {
+    position: absolute;
+    z-index: 10;
+    margin-left: 66.5%;
+    margin-top: 0.25%;
+    color: #bdc1c6;
+}
+
+#home .content .button-container {
+    display: block;
+    margin: auto;
+}
+
+#home .content .buttons {
+    display: flex;
+}
+
+#home .content .button-container .buttons button:hover {
+        border: 0.5px solid #bdc1c6;
+    }
+
+@media (max-width: 1920px) {
+
+    .store {
+        margin-right: 82%;
+    }
+
+    #home .content .logo {
+        margin: auto;
+        display: block;
+        width: 273px;
+        height: 102px;
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+
+    #home .content .search input {
+        width: 35%;
+        margin-left: 32.5%;
+    }
+
+    #home .content .search #search-icon {
+        margin-left: 33.75%;
+        margin-top: 0.175%;
+    }
+
+    #home .content .search #camera-icon {
+        margin-left: 64.75%;
+        margin-top: 0.05%;
+    }
+
+    #home .content .button-container .buttons button {
+        color: white;
+        background: #303134;
+        border: none;
+        padding: 10px 25px 10px;
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    
+}
+
+@media (max-width: 400px) {
+
+    .store {
+        margin-right: 18.5%;
+    }
+
+    #home nav ul span {
+        margin-left: 65.5%;
+    }
+
+    #home nav ul span:hover {
+        margin-left: 62.9%;
+    }
+
+    .profile-picture {
+        margin-left: 75.5%;
+    }
+
+    .profile-picture:hover {
+        margin-left: 73.75%;
+    }
+
+    #home .content .search input {
+        width: 80%;
+        margin-left: 8.5%;
+    }
+
+    #home .content .search #search-icon {
+        margin-left: 14%;
+    }
+
+    #home .content .search #camera-icon {
+        margin-left: 75.5%;
+    }
+    
+}
+
+/* 2.6% */
